@@ -1,0 +1,107 @@
+#bann {
+  padding: 12em 0 10em 0;
+  background-image: url('att1.jpg');
+  background-size: cover;
+  background-position: top;
+  height: 600px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#banner {
+  padding: 12em 0 10em 0;
+  background-image: url('depart.jpg');
+  background-size: cover;
+  background-position: top;
+  height: 600px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.logo 
+{
+  height: 45px ;
+  width: 45px; 
+  margin: 10px 25px; 
+}
+
+
+/* .................................department................................. */
+.inh{
+  height: 498px;
+  margin-top: 50px;
+  margin-right: 8%;
+  margin-left: 8%;
+}
+.cad
+  {
+    height: 220px; 
+    width: 20%;
+    background: #39394d;
+    float: left;
+    margin: 2% 0% 0% 10%;
+  }
+  .crd-txt
+  {
+    color: white;
+    margin-top: 80px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .cad:hover
+  {
+    background: green;
+  }
+
+/*............................footer........................ */
+  #media{
+  margin-bottom:20px;
+  text-align: right;
+  margin-right:10%;
+  }
+
+  
+.footer {
+  position: relative;
+  height:47%;
+  background-color: #39394d;
+  color: white;
+  text-align: center;
+  }
+  .container {
+  position: relative;
+  width: 100%;
+  }
+  
+.container .btn {
+  position: absolute;
+  margin-top: 30px;
+  left: 90%;
+  line-height: 1;
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.container .btn:hover {
+  background:linear-gradient(to left, #fA8611 , #2979ff);
+  color: white;
+}
+
+/* table style */
+.data{
+  border:1px solid #ddd;
+  width:100%;
+}
+.data td, .data th{
+border:1px solid #ddd;
+padding:10px;
+}
+tr:nth-child(even){background-color:#f2f2f2;}
+.data tr:hover{background-color:#ddd;}
+th{
+background-color:
+}

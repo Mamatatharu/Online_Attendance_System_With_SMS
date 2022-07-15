@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <body>
+            <table style="float: right; margin-top: 150px; margin-left: -50px" border="1" cellspacing="0" >
+                    <tr>
+                        <th>userid</th>
+                        <th>firstname</th>
+                        <th>lastname</th>
+                        <th>username</th>
+                        <th>password</th>
+                        </tr>
+                        <tr>
+                                <th>   1    </th>
+                                <th>   shishir      </th>
+                                <th>    rana     </th>
+                                <th>  shishirrana747       </th>
+                                <th>  1234   </th>
+                        </tr>
+                        </table>
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4" style="padding-left: 450px; padding-top: 150px">
+                            <div class="card" style="width: 400px; border: 2px solid blue;">
+                            <div class="card-header" style="background-color: blueviolet; color: #ffffff">
+                                <h1>Register</h1>
+                                </div>
+                                <div class="card-body row">
+                                        <div class="col-md-6">
+                                            <p>firstname:</p>
+                                            <p> lastname: </p>
+                                            <p>username:</p>
+                                            <p>password:</p>
+                                            <p>confirm password:</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input style="border-color: springgreen; margin-top: 5px" type="text" id="firstname">
+                                            <input  style="border-color: springgreen; margin-top: 8px" type="text" id="lastname">
+                                            <input style="border-color: springgreen; margin-top: 8px;padding-left: 5px" type="text" id="username">
+                                            <input style="border-color: springgreen; margin-top: 8px" type="text" id="password">
+                                            <input style="border-color: springgreen; margin-top: 8px" type="text" id="confirm password">
+                                           
+                                        </div>
+                                                  <div class="card-footer">
+                            <button id="btn" onclick="getnumber()"><i id="i1" style="visibility:hidden;" class="fa fa-spin fa-spinner fa-fw "></i>Register</button>
+
+                       </div>
+         </div>
+        </div>
+                    </div>
+            </div>
+          
+                    <script>
+
+
+                    function getnumber()
+                    {
+                        document.getElementById("i1").style.visibility="visible";
+                        var firstname= document.getElementById("firstname").value;
+                           var lastname= document.getElementById("lastname").value;
+                           var username= document.getElementById("username").value;
+                           var password= document.getElementById("password").value;
+                           var confirm= document.getElementById("confirm password").value;
+                          
+                        if(firstname!=="" && lastname!=="" && username!=="" && password!=="" && confirm!=="" )
+                          
+                       {
+                           setInterval(checknumber,3000);
+                     }
+                     else
+                     {
+                         alert("Enter all the fields!!")
+                         document.getElementById("i1").style.visibility="hidden";
+                     }
+                    }
+                        </script>
+               
+
+</body>
+</html>
